@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Platform Virtual Lab Berbasis Cloud</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🔬 Virtual Lab Cloud</h1>
+    <p>Platform Laboratorium Berbasis Cloud untuk Pembelajaran Jarak Jauh</p>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Apa itu Virtual Lab?</h2>
+      <p>
+        Virtual Lab berbasis cloud adalah sistem praktikum daring yang memungkinkan mahasiswa
+        melakukan simulasi eksperimen dari rumah secara real-time, fleksibel, dan efisien.
+      </p>
+      <ul>
+        <li>Akses 24/7 tanpa batasan lokasi</li>
+        <li>Simulasi interaktif berbagai eksperimen</li>
+        <li>Hemat biaya & mudah digunakan</li>
+      </ul>
+    </section>
+
+    <section class="lab-access">
+      <button onclick="tampilkanLab()">🔎 Lihat Simulasi Lab Virtual</button>
+      <div id="lab-content" class="hidden">
+        <h3>💡 Simulasi Tersedia</h3>
+        <ul>
+          <li>🧪 Praktikum Reaksi Asam-Basa</li>
+          <li>🔬 Mikroskop Virtual Bakteri Gram</li>
+          <li>⚗️ Pengenceran Larutan Seri</li>
+        </ul>
+        <p><em>*Klik tombol di atas untuk menyembunyikan kembali.</em></p>
+      </div>
+    </section>
+
+    <section class="upload-section">
+      <h2>📤 Upload Materi Pembelajaran</h2>
+      <form id="uploadForm">
+        <input type="file" id="fileInput" accept=".ppt,.pptx,.pdf" />
+        <button type="submit">Upload</button>
+      </form>
+
+      <div id="fileList">
+        <h3>📚 Materi yang Telah Diunggah:</h3>
+        <ul id="uploadedFiles"></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Virtual Lab Cloud | Dikembangkan untuk pembelajaran farmasi jarak jauh</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
